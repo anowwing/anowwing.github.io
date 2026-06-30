@@ -1048,46 +1048,18 @@ height:35px;
 }
 
 
-
-
-
-
-@media(max-width:700px){
-
-
-.music-card{
-
-
-flex-direction:column;
-
-
-text-align:center;
-
-
-}
-
-
-
-.music-controls{
-
-
-justify-content:center;
-
-
-}
-
 /* =========================
-      MOBILE OPTIMIZATION
+      MOBILE ADAPTATION
 ========================= */
 
 
-img {
+img{
     max-width:100%;
 }
 
 
 
-@media (max-width:700px){
+@media(max-width:700px){
 
 
     body{
@@ -1095,12 +1067,23 @@ img {
     }
 
 
-    .profile,
-    main{
 
-        width:94%;
+    .profile{
+
+        width:95%;
+
+        margin:20px auto;
 
     }
+
+
+
+    main{
+
+        width:95%;
+
+    }
+
 
 
 
@@ -1115,17 +1098,17 @@ img {
 
     .profile-info{
 
-
         flex-direction:column;
 
         text-align:center;
 
-        gap:20px;
-
         padding:20px;
 
+        gap:15px;
 
     }
+
+
 
 
 
@@ -1139,49 +1122,13 @@ img {
 
 
 
+
+
     h1{
 
-        font-size:26px;
+        font-size:25px;
 
         letter-spacing:1px;
-
-        word-break:break-word;
-
-    }
-
-
-
-    .profile-info p{
-
-        font-size:14px;
-
-    }
-
-
-
-
-
-    nav{
-
-
-        margin:20px 0;
-
-        gap:10px;
-
-
-    }
-
-
-
-    nav a{
-
-
-        width:100%;
-
-        text-align:center;
-
-        padding:12px;
-
 
     }
 
@@ -1199,10 +1146,23 @@ img {
 
 
 
-    .box,
-    .card{
+    nav{
 
-        padding:18px;
+        margin:20px;
+
+        flex-direction:column;
+
+    }
+
+
+
+    nav a{
+
+        width:100%;
+
+        text-align:center;
+
+        padding:12px;
 
     }
 
@@ -1220,36 +1180,41 @@ img {
 
 
 
+    .card,
+    .box{
+
+        padding:18px;
+
+    }
+
+
+
+
+
     .friend img,
     .artist img{
-
 
         width:100px;
 
         height:100px;
 
-
     }
+
+
 
 
 
 
     .music-card{
 
-
         flex-direction:column;
-
 
         text-align:center;
 
-
         gap:15px;
 
-
-        padding:20px;
-
-
     }
+
 
 
 
@@ -1261,33 +1226,10 @@ img {
 
 
 
+
     .music-controls{
 
-
         justify-content:center;
-
-
-    }
-
-
-
-    .music-controls button{
-
-        width:42px;
-
-        height:42px;
-
-    }
-
-
-
-    .music-controls .main-play{
-
-
-        width:55px;
-
-        height:55px;
-
 
     }
 
@@ -1299,14 +1241,11 @@ img {
 
 
 
-/* СОВСЕМ МАЛЕНЬКИЕ ТЕЛЕФОНЫ */
 
 
 @media(max-width:380px){
 
 
-
-    main,
     .profile{
 
         width:96%;
@@ -1317,7 +1256,7 @@ img {
 
     h1{
 
-        font-size:22px;
+        font-size:20px;
 
     }
 
@@ -1328,17 +1267,6 @@ img {
         font-size:12px;
 
     }
-
-
-
-    .card h3{
-
-        font-size:18px;
-
-    }
-
-
-}
 
 
 }
