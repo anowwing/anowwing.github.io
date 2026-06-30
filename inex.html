@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Моя биография</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+<header class="profile">
+
+    <div class="banner">
+        <img src="images/banner.jpg" alt="Баннер">
+    </div>
+
+
+    <div class="profile-info">
+
+        <img class="avatar" src="images/avatar.jpg" alt="Аватар">
+
+        <div>
+            <h1>ɴ0ᴛᴄʜɪɴɢ ^_^</h1>
+
+            <p>
+               сибироязвенный скотомогильник
+            </p>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+
+<nav>
+
+<a href="#about">Профиль</a>
+<a href="#stack">Стек</a>
+<a href="#hobbies">Увлечения</a>
+<a href="#friends">Друзья</a>
+<a href="#artists">Исполнители</a>
+
+</nav>
+
+
+
+<main>
+
+<section id="about">
+
+<h2>Основной профиль</h2>
+
+
+<div class="box profile-music">
+
+
+
+
+
+
+
+<div class="music-card">
+
+
+<div class="music-cloud"></div>
+
+
+<div class="music-info">
+
+<h3>
+Meant To Be
+</h3>
+
+
+<p>
+Cuntsniffer
+</p>
+
+
+</div>
+
+
+
+
+<audio id="mainSong">
+
+<source src="zalupa.mp3" type="audio/mp3">
+
+</audio>
+
+
+
+
+<div class="music-controls">
+
+
+<button onclick="document.getElementById('mainSong').currentTime -= 10">
+↶
+</button>
+
+
+<button class="main-play" onclick="playMusic()">
+▶
+</button>
+
+
+<button onclick="document.getElementById('mainSong').currentTime += 10">
+↷
+</button>
+
+
+</div>
+
+
+
+<div class="music-wave">
+
+
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<script>
+
+
+function playMusic(){
+
+
+let song=document.getElementById("mainSong");
+
+
+let btn=document.querySelector(".main-play");
+
+
+
+if(song.paused){
+
+
+song.play();
+
+
+btn.innerHTML="⏸";
+
+
+}
+
+
+else{
+
+
+song.pause();
+
+
+btn.innerHTML="▶";
+
+
+}
+
+
+}
+
+
+
+</script>
+
+
+
+<section id="stack">
+
+<h2>Мой стек</h2>
+
+
+<section>
+  <div class="cards">
+
+    <!-- Карточка Python -->
+    <div class="card">
+      <img src="https://img.icons8.ru/?size=100&id=13441&format=png&color=000000" alt="Python" style="width: 40px; height: 40px;">
+      <h3>Python</h3>
+      <p>Интеграция FastAPI, Поднятие Flask сайта, внедрение Rcon, создание Telegram, Discord и Vk ботов</p>
+    </div>
+
+    <!-- Карточка Dart -->
+    <div class="card">
+      <!-- Иконка Dart теперь на месте и работает через тег img -->
+      <img src="https://img.icons8.ru/?size=100&id=7AFcZ2zirX6Y&format=png&color=000000" alt="Dart" style="width: 40px; height: 40px;">
+      <h3>Dart</h3>
+      <p>Создание GUI кроссплатформенного приложения на Flutter</p>
+    </div>
+
+    <!-- Карточка SQL -->
+    <div class="card">
+      <img src="https://img.icons8.ru/?size=100&id=QeIg9siFKGgp&format=png&color=000000" alt="SQL" style="width: 40px; height: 40px;">
+      <h3>SQL</h3>
+      <p>Настройка и интеграция серверных БД (MariaDB, MySQL), локальных (SQLite) или более быстрых баз на подобии DuckDB</p>
+    </div>
+
+    <!-- Карточка Другие технологии -->
+    <div class="card">
+      <img src="https://icons8.ru" alt="Tools" style="width: 40px; height: 40px;">
+      <h3>Другие технологии</h3>
+      <p>Написание скриптов для SA-MP, плагинов для MTA серверов на Lua, написание плагинов для Spigot серверов на Java (Bukkit).<br> 
+         Создание фронтенд верстки для сайта на HTML/CSS.<br>
+         Опыт в работе с UNIX системами и настройка VPS серверов на Linux.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+
+<section id="hobbies">
+
+<h2>Мои увлечения</h2>
+
+
+<div class="box">
+
+<p>
+???
+</p>
+
+</div>
+
+</section>
+
+
+
+
+
+
+
+<section id="friends">
+
+
+<h2>Друзья</h2>
+
+
+<div class="cards">
+
+
+
+<div class="friend card">
+
+<img src="images/wenlaksia.jpg">
+
+<h3>𝒘𝒆𝒏𝒍𝒂𝒌𝒔𝒊𝒂</h3>
+
+
+</div>
+
+
+
+<div class="friend card">
+
+<img src="images/gocint.jpg">
+
+<h3>НΛО 𝘴𝘰𝘳𝘯𝘺@𝘬¹¹#XаkNp</h3>
+
+
+
+</div>
+
+
+
+
+
+<div class="friend card">
+
+<img src="images/sanya.jpg">
+
+<h3>лакомая санечка поцілуйко [ 𝙢𝙖𝙧𝙮 𝙤𝙣 𝙖 𝙘𝙧𝙤𝙨𝙨 ]</h3>
+
+
+<p class="small">
+Не нарисовала немцова!
+</p>
+
+</div>
+
+
+
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<section id="artists">
+
+
+<section id="artists">
+
+<h2>Любимые исполнители</h2>
+
+
+<div class="cards">
+
+
+<div class="artist card">
+<img src="images/artists/ovsyankin.png">
+<h3>Овсянкин</h3>
+</div>
+
+
+<div class="artist card">
+<img src="images/artists/mvk.png">
+<h3>молодежьбвыб<br>ираеткосмос</h3>
+</div>
+
+
+<div class="artist card">
+<img src="images/artists/pritsa_em.png">
+<h3>Птица Емь</h3>
+<p>И все проекты Ситникова</p>
+</div>
+
+
+<div class="artist card">
+<img src="images/artists/strikalo.png">
+<h3>Валентин Стрыкало</h3>
+</div>
+
+
+<div class="artist card">
+<img src="images/artists/onda_andar.png">
+<h3>ONDA ANDAR</h3>
+</div>
+
+
+<div class="artist card">
+<img src="images/artists/vertula.png">
+<h3>Вертушка Газманова</h3>
+</div>
+
+
+<div class="artist card">
+<img src="images/artists/mb_paket.png">
+<h3>МБ Пакет</h3>
+</div>
+
+
+<div class="artist card">
+<img src="images/artists/rebzyx.png">
+<h3>rebzyyx</h3>
+</div>
+
+
+<div class="artist card">
+<img src="images/artists/ng.png">
+<h3>Ночные Грузчики</h3>
+</div>
+
+
+</div>
+
+</section>
+
+
+</section>
+
+
+
+
+</main>
+
+
+
+
+
+
+<footer>
+
+
+
+
+
+</footer>
+
+
+
+
+</body>
+</html>

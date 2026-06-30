@@ -1076,5 +1076,269 @@ justify-content:center;
 
 }
 
+/* =========================
+      MOBILE OPTIMIZATION
+========================= */
+
+
+img {
+    max-width:100%;
+}
+
+
+
+@media (max-width:700px){
+
+
+    body{
+        overflow-x:hidden;
+    }
+
+
+    .profile,
+    main{
+
+        width:94%;
+
+    }
+
+
+
+    .banner{
+
+        height:180px;
+
+    }
+
+
+
+
+    .profile-info{
+
+
+        flex-direction:column;
+
+        text-align:center;
+
+        gap:20px;
+
+        padding:20px;
+
+
+    }
+
+
+
+    .avatar{
+
+        width:120px;
+
+        height:120px;
+
+    }
+
+
+
+    h1{
+
+        font-size:26px;
+
+        letter-spacing:1px;
+
+        word-break:break-word;
+
+    }
+
+
+
+    .profile-info p{
+
+        font-size:14px;
+
+    }
+
+
+
+
+
+    nav{
+
+
+        margin:20px 0;
+
+        gap:10px;
+
+
+    }
+
+
+
+    nav a{
+
+
+        width:100%;
+
+        text-align:center;
+
+        padding:12px;
+
+
+    }
+
+
+
+
+
+    h2{
+
+        font-size:24px;
+
+    }
+
+
+
+
+
+    .box,
+    .card{
+
+        padding:18px;
+
+    }
+
+
+
+
+
+    .cards{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+
+
+
+    .friend img,
+    .artist img{
+
+
+        width:100px;
+
+        height:100px;
+
+
+    }
+
+
+
+
+    .music-card{
+
+
+        flex-direction:column;
+
+
+        text-align:center;
+
+
+        gap:15px;
+
+
+        padding:20px;
+
+
+    }
+
+
+
+    .music-info h3{
+
+        font-size:20px;
+
+    }
+
+
+
+    .music-controls{
+
+
+        justify-content:center;
+
+
+    }
+
+
+
+    .music-controls button{
+
+        width:42px;
+
+        height:42px;
+
+    }
+
+
+
+    .music-controls .main-play{
+
+
+        width:55px;
+
+        height:55px;
+
+
+    }
+
+
+
+
+}
+
+
+
+
+/* СОВСЕМ МАЛЕНЬКИЕ ТЕЛЕФОНЫ */
+
+
+@media(max-width:380px){
+
+
+
+    main,
+    .profile{
+
+        width:96%;
+
+    }
+
+
+
+    h1{
+
+        font-size:22px;
+
+    }
+
+
+
+    nav a{
+
+        font-size:12px;
+
+    }
+
+
+
+    .card h3{
+
+        font-size:18px;
+
+    }
+
+
+}
+
 
 }
